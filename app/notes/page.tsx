@@ -9,11 +9,15 @@ export default async function Page() {
 		redirect("/auth/login");
 	}
 
-	let { data: tabla, error: err } = await supabase.from("demo").select("message");
-	if (err) {
-		throw new Error(err.message);
-	}
-	console.log(JSON.stringify(tabla, null, 2));
+	<h1>Hidden data behind login!</h1>;
 
-	return <pre>{JSON.stringify(tabla, null, 2)}</pre>;
+	/*
+	const { datos, e} = await supabase.from("demo").select("message");
+	if (e) {
+		throw new Error(e.message);
+	}
+	console.log(JSON.stringify(datos, null, 2));
+
+	return <pre>{JSON.stringify(datos, null, 2)}</pre>;
+	*/
 }

@@ -18,7 +18,6 @@ import {
 	Target,
 	BookOpen,
 	Globe,
-	Calculator,
 	CreditCard,
 	ClipboardList,
 } from "lucide-react";
